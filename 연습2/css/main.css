@@ -19,7 +19,6 @@ body {
 }
 
 .main-button {
-  
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
@@ -50,12 +49,23 @@ body {
     box-shadow: 0 0 40px 40px red inset;
 }
 
-.box {
+.explain-box {
   background-color: #eee;
-  width: 700px;
+  width: 80%;/*부모가 body이므로 body의 80%, width는 content 영역의 너비를 의미함 padding, border이런건 관련없음*/
+  max-width: 600px;/*width %는 너무 크니까 최대 크기 지정*/
   height: 200px;
   text-align: center;
   position: relative;
   top: -50px;
-  left: 250px;
+  margin: auto;
+  padding: 20px;
+  z-index: 5;/*높을수록앞에온다는뜻*/
+  box-sizing: border-box;/*이러면 width가 padding,border 을 포함해버림, 보통 이거 맨위에 div 전체 태그 안에 넣어버림->편해서,일관성*/ 
+}
+
+input[type=email] {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
