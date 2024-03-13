@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div>
+    <table><!--표만들땐 table이 편함-->
+      <thead>
+        <tr><!--tr:가로행 td:세로열-->
+          <th><p>111</p><p>111</p></th>
+          <td style="vertical-align: top;">222</td><!--세로정렬할때 vertical-align 씀-->
+          <td>333</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--inline요소의 세로정렬할때 vertical-align 씀, inline이란 ? 항상 옆으로 채워지는 폭과 너비가 없는 요소(옆으로 붙음)-->
+  <div><!--용도1:글씨간의 세로정렬할때 vertical-align 사용, 용도2:table안에서 vertical-align으로 세로정렬할때 top middle bottom 만 가능-->
+    <p style="font-size: 50px;">greetings<span style="font-size: 20px; vertical-align: sub;">안녕</span></p>
+  </div>
+
+  <div> <img src="https://static.vecteezy.com/system/resources/previews/018/910/697/non_2x/instagram-mobile-app-logo-instagram-app-icon-ig-app-free-free-vector.jpg" width="32" height="32"><span style="vertical-align: top;">image with a default alignment.</span></div>
+
+</body>
+
+</html>
