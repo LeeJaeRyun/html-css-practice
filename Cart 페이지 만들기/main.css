@@ -8,9 +8,12 @@
   width: auto;
   height: 100vh;
   background: linear-gradient(blue, white);
+  text-align: center;
 }
 
+
 table {
+  margin: 0 auto;
   margin-top: 10px;
   border-collapse: collapse;
   width: 800px;
@@ -29,9 +32,12 @@ th,tr {
 }
 
 .payment-btn {
-  padding: 10px;
+  float: right;
+  margin: 10px;
+  bottom: 20px;
+  right: 20px;
+  padding: 1%;
   width: 200px;
-  margin: 20px;
   border-radius: 5px;
   cursor: pointer;
   border-color: yellow;
@@ -46,4 +52,9 @@ th,tr {
 
 .payment-btn:hover {
   background-position: 0;
+}
+
+.bot {
+  margin: 0 auto;
+  width: 800px;
 }
