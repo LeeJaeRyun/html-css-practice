@@ -1,27 +1,58 @@
-body {
-  margin: 0px;
+div, input, textarea {
   box-sizing: border-box;
 }
 
-form {
-  width: 40%;
-  height: 500px;
-  background-color: #eee;
-  text-align: ce;
-  
+body {
+  margin: 0px;
 }
 
-h2 {
-  padding: 20px;
-  text-align: left;
+.form-background {
+  background-color: black;
+  padding: 30px;
 }
 
-.form-name1 {
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
   float: left;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 10px;
 }
 
+.w-100 {
+  padding: 10px;
+}
 
+.yellow-b {
+  padding: 10px;
+  width: 100px;
+  display: block;
+  float: right;
+  border-radius: 5px;
+  border-color: blue;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  transition: all 150ms ease-in-out;
+}
 
+.yellow-b:hover {
+  color: black;
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
 

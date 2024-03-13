@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,40 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
-<body>
-  <div>
-    <form>
-      <h2>contact us</h2>
-      <div class="form-email">
-        <p>Your Email</p>
-        <input type="email" placeholder="email@example.com">
-      </div>
-      <div class="form-name1">
-        <p>First name</p>
-        <input type="text">
-      </div>
-      <div class="form-name2">
-        <p>Last name</p>
-        <input type="text">
-      </div>
-      <div class="form-message">
-        <p>Message</p>
-        <input type="text">
-      </div>
 
-      <input type="checkbox">
-      <p>Subscribe</p>
-      <input type="submit">
-    </form>
+<body>
+  <div class="form-background">
+    <div class="form-white">
+      <form>
+        <div class="w-100">
+          <h3>Contact Us</h3>
+          <p>Your Email</p>
+          <input class="form-input" type="email" placeholder="www@naver.com">
+        </div>
+        <div class="w-50">
+          <p>First Name</p>
+          <input class="form-input" type="text">
+        </div>
+        <div class="w-50">
+          <p>Last Name</p>
+          <input class="form-input" type="text">
+        </div>
+        <div style="clear: both;"></div>
+
+        <div class="w-100">
+          <p>Message</p>
+          <textarea class="form-input"></textarea>
+        </div>
+
+        <div>
+          <br>
+          <input id="sub" type="checkbox"><!--보통은 input이랑 label 태그는 같이 쓰는게 좋음 p대신에 -->
+          <label for="sub">Subscribe</label><!--id랑 for 같게 맞춰주면 label을 누르면 input도 누른거로 간주해줌-->
+          <button class="yellow-b">SEND</button>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
+
 </html>
