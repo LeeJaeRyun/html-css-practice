@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 * {
   margin: 0px;
+}
+
+/*폰트 안티 앨리어싱-> 글씨체 적용시 뭔가 안예쁘면 transform: rotate(0.03deg)하기*/
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .background {
@@ -36,7 +45,7 @@ th,tr {
   margin: 10px;
   bottom: 20px;
   right: 20px;
-  padding: 1%;
+  padding: 10px;
   width: 200px;
   border-radius: 5px;
   cursor: pointer;
@@ -50,6 +59,7 @@ th,tr {
   transition: background 300ms ease-in-out;
 }
 
+/*:hover :focus :active 순서대로 넣어줘야함 안 그럼 잘 안됨*/
 .payment-btn:hover {
   background-position: 0;
 }
@@ -58,3 +68,8 @@ th,tr {
   margin: 0 auto;
   width: 800px;
 }
+
+/* css 할때 Object Oriented CSS 라고 하는 작성 관습을 이용하자
+ css 할때 뼈대를 나눠서 재사용할 수 있게끔 ㄱㄱ
+ class 작명할때 창의력이 딸리면 BEM(Block__Element--Modifier) 룰 따라하기
+ */
