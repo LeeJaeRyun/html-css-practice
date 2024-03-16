@@ -88,6 +88,17 @@ input[type=email] {
   text-align: center;
 }
 
+div i {
+  margin-top: 20px;
+  padding-top: 30px;
+  font-size: 30px;
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
 /*media query는 항상 밑에있어야함*/
 @media screen and (max-width: 1200px){
   .main-title {
